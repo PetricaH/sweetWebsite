@@ -123,13 +123,20 @@ body {
 	align-items: center;
 	padding-bottom: 5vh;
 	padding-top: 5vh;
+	gap: 15vw;
 }
 
-.part-one-hero > h1 {
-	font-family: 'Sweets Smile', sans-serif;
-	color: #FFD700;
-	font-size: 5rem;
-	text-align: left;
+.part-one-hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+}
+
+#craving-sweets {
+	height: 180px;
+	width: auto;
 }
 
 .part-two-hero {
@@ -273,11 +280,26 @@ body {
 
 #products-section > h1 {
 	color: #CF1461;
-	font-family: 'Sweets Smile', sans-serif;
+	font-weight: normal;
 	font-size: 3rem;
 	text-align: center;
 	padding-top: 30px;
-	padding-bottom: 30px;
+}
+
+@keyframes bounce {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+#products-section > span {
+	display: inline-block;
+	animation: bounce 1s infinite;
+	margin: 2vh auto;
+	color: purple;
 }
 
 .sweet-types {
@@ -330,20 +352,26 @@ body {
 
 .sweets-grid {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 30px;
+	gap: 70px;
 	max-width: 800px;
+	overflow: hidden;
 }
 
 .sweet-card {
-
+	width: 150px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.sweet-card > p {
+	font-size: .8em;
+	text-align: left;
 }
 
 .choco-group {

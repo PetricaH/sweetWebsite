@@ -24,10 +24,10 @@
         <section id="section-one">
             <div class="section-one-container">
                 <div class="part-one-hero">
-                    <h1>Craving<br>Sweets?</h1>
-                    <button class="buyNow">Mistery Box <span class="material-symbols-outlined">
+                    <img src="images/craving-sweets.png" id="craving-sweets">
+                    <a href="pages/misteryBox.html"><button class="buyNow">Mistery Box <span class="material-symbols-outlined">
                         indeterminate_question_box
-                        </span> </button>
+                        </span> </button></a>
                 </div>
                 <div class="part-two-hero">
                     <h1>People Adore</h1>
@@ -45,7 +45,10 @@
         </section>
 
         <section id="products-section">
-            <h1>What We've Got</h1>
+            <h1>Check Out Our Proudcts</h1>
+                <span class="material-symbols-outlined">
+                    keyboard_double_arrow_down
+                    </span>
             <div class="sweet-types">
 
                 <div class="sweet-container">
@@ -57,14 +60,14 @@
                         <div class="choco-group">
 
                             <div class="sortiment-buttons">
-                                <button>All</button>
-                                <button>XX</button>
-                                <button>XXX</button>
-                                <button>XXXX</button>
+                                <button type="button"  onclick="filterSweets('all')">All</button>
+                                <button type="button"  onclick="filterSweets('XX')">XX</button>
+                                <button type="button"  onclick="filterSweets('XXX')">XXX</button>
+                                <button type="button"  onclick="filterSweets('XXXX')">XXXX</button>
                             </div>
                             
                             <div class="sweets-grid">
-                                <div class="sweet-card">
+                                <div class="sweet-card" data-category="all">
                                     <p>Truffles</p>
                                     <div class="truffles"><img src="https://fakeimg.pl/200x200/"></div>
                                     <div class="part-two-hero-btns">
@@ -76,7 +79,7 @@
                                         <i class="fa-solid fa-cart-shopping quant-cart"></i>
                                     </div>
                                 </div>
-                                <div class="sweet-card chocoBar">
+                                <div class="sweet-card chocoBar" data-category="XX">
                                     <p>Chocolate Bars</p>
                                     <div class="chocoBar"><img src="https://fakeimg.pl/200x200/"></div>
                                     <div class="part-two-hero-btns">
@@ -88,7 +91,7 @@
                                         <i class="fa-solid fa-cart-shopping quant-cart"></i>
                                     </div>
                                 </div>
-                                <div class="sweet-card chocoAlmonds">
+                                <div class="sweet-card chocoAlmonds" data-category="XXX">
                                     <p>Chocolate Almonds</p>
                                     <div class="chocoAlmonds"><img src="https://fakeimg.pl/200x200/"></div>
                                     <div class="part-two-hero-btns">
@@ -100,7 +103,7 @@
                                         <i class="fa-solid fa-cart-shopping quant-cart"></i>
                                     </div>
                                 </div>
-                                <div class="sweet-card pralines">
+                                <div class="sweet-card pralines" data-category="XXX">
                                     <p>Pecan Pralines</p>
                                     <div class="pralines"><img src="https://fakeimg.pl/200x200/"></div>
                                     <div class="part-two-hero-btns">
@@ -112,7 +115,7 @@
                                         <i class="fa-solid fa-cart-shopping quant-cart"></i>
                                     </div>
                                 </div>
-                                <div class="sweet-card whiteChoco">
+                                <div class="sweet-card whiteChoco" data-category="XXXX">
                                     <p>Whie Chocolate</p>
                                     <div class="whiteChoco"><img src="https://fakeimg.pl/200x200/"></div>
                                     <div class="part-two-hero-btns">
@@ -124,7 +127,7 @@
                                         <i class="fa-solid fa-cart-shopping quant-cart"></i>
                                     </div>
                                 </div>
-                                <div class="sweet-card premiumChoco">
+                                <div class="sweet-card premiumChoco" data-category="XXXX">
                                     <p>Premium Chocolate</p>
                                     <div class="premiumChoco"><img src="https://fakeimg.pl/200x200/"></div>
                                     <div class="part-two-hero-btns">
