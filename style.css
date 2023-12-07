@@ -551,3 +551,21 @@ form > button {
 	color: white;
 	opacity: .5;
 }
+
+#goToTopBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 18px;
+	background-color: #007BFF;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+#goToTopBtn:hover {
+	background-color: #0056b3;
+}
