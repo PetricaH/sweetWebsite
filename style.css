@@ -89,7 +89,7 @@ body {
 
 .header {
 	background-color: #CF1461;
-	height: 50px;
+	height: 70px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -98,15 +98,35 @@ body {
 #logo-dolce {
     max-width: 100px;
     height: auto;
-	padding-left: 10px;
+	margin-left: 10vw;
+	
+	/*transition is for when opening the site*/
+	transition: .3s ease-in;
 }
 
 .header-buttons {
 	display: flex;
-	gap: 20px;
-	padding-right: 10px;
-	padding: 10px;
+	list-style: none;
+	gap: 35px;
+	padding-right: 10vw;
 	color: #FFD700;
+	font-size: 24px;
+	transition: .3s ease-in;
+	cursor: pointer;
+}
+
+.header-buttons > li {
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+}
+
+.fa-magnifying-glass:hover, 
+.fa-cart-shopping:hover, 
+.fa-user:hover {
+	font-size: 28px;
+	color: white;
+	transition: .1s ease-in-out;
 }
 
 #section-one {
@@ -139,91 +159,109 @@ body {
 	width: auto;
 }
 
-.part-two-hero {
+.daily-product-hero-card {
 	display: none;
 }
 
 @media (min-width: 630px) {
-	.part-two-hero {
+	.daily-product-hero-card {
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
 		background: linear-gradient(to top, #FFD700, transparent);
 		border-radius: 20px;
+		padding: 30px;
 	}
-}
 
-.part-two-hero > h1 {
-	color: white;
-	font-weight: bold;
-	font-size: 1.75rem;
-	text-transform: uppercase;
-}
+	.daily-product-hero-card > img {
+		width: 350px;
+		height: auto;
+	}
 
-.part-two-hero > img {
-	max-width: 300px;
-	height: auto;
-}
+	.daily-product-hero-card h1 {
+		color: white;
+		font-size: 2.5em;
+		text-align: center;
+		font-weight: bold;
+	}
 
-.part-two-hero-btns {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	gap: 30px;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 10px;
-}
+	/*partea cu butoanele de cantitate si adaugare in cos*/
 
-.quantity-selector {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: center;
-}
+	.daily-product-hero-btns {
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 30px;
+		justify-content: center;
+		align-items: center;
+	}
 
-.btn {
-	max-width: fit-content;
-	cursor: pointer;
-	padding: 5px;
-	opacity: .7;
-	font-size: 1.75rem;
-	color: black;
-}
+	.quantity-selector {
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 25px;
+		cursor: pointer;
+		box-sizing: border-box;
+		width: fit-content;
+		height: 50px;
+	}
 
-#quantity {
-	width: 40px;
-	text-align: center;
-	margin: 0 10px;
-	background: transparent;
-	border: none;
-	color: black;
-}
+	.quantity-selector > .quantity-container {
+		font-family: 'Montserrat', sans-serif;
+		width: 50px;
+		border-radius: 20px;
+		border-style: none;
+		padding: 10px;
+		text-align: center;
+		background-color: rgba(255, 255, 255, 1);
+	}
 
-.quantity {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	border: none;
-}
+	.quantity-selector > .btn {
+		width: fit-content;
+		font-size: 1.5em;
+		font-weight: 200;
+		color: black;
+		user-select: none;
+	}
 
-.quant-cart {
-	color: black;
-	padding: 15px;
-	background-color: #FFD700;
-	border-radius: 5px;
-}
+	.quantity-selector-card > .quantity-container {
+		font-family: 'Montserrat', sans-serif;
+		width: 50px;
+		border-radius: 20px;
+		border-style: none;
+		padding: 10px;
+		text-align: center;
+		background-color: rgba(255, 255, 255, 1);
+	}
 
-.quant-cart:hover {
-	color: white;
-	background-color: rgb(216, 0, 216);
-	cursor: pointer;
-}
+	.daily-product-hero-btns {
+		box-sizing: border-box;
+		height: 70px;
+		width: 100%;
+	}
 
-.quant-cart:active {
-	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+	.daily-product-hero-btns > .quant-cart {
+		box-sizing: border-box;
+		background-color: purple;
+		border-radius: 20px;
+		transition: none;
+		font-size: 24px;
+		padding: 14px;
+		box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+		color: white;
+		user-select: none;
+	}
+
+	.daily-product-hero-btns > .quant-cart:hover {
+		cursor: pointer;
+	}
+
+	.daily-product-hero-btns > .quant-cart:active {
+		background-color: rgba(155, 152, 152, 0.5);
+		overflow: hidden;
+		color: black;
+	}
+
+	/*partea cu butoanele de cantitate si adaugare in cos*/
 }
 
 .buyNow {
@@ -374,14 +412,55 @@ body {
 	text-align: left;
 }
 
-.choco-group {
+.part-two-hero-btns {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 15px;
+	align-items: center;
+	justify-content: center;
+}
+
+.part-two-hero-btns > .quant-cart {
+	box-sizing: border-box;
+	background-color: purple;
+	border-radius: 20px;
+	transition: none;
+	font-size: 24px;
+	padding: 14px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	color: white;
+	user-select: none;
+}
+
+.part-two-hero-btns > .quant-cart:hover {
+	cursor: pointer;
+}
+
+.part-two-hero-btns > .quant-cart:active {
+	background-color: rgba(155, 152, 152, 0.5);
+	color: black;
+}
+
+.quantity-selector-card {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 25px;
+	cursor: pointer;
+}
+
+.quantity-selector-card > .btn {
+	user-select: none;
+}
+
+.whole-sweet-grid {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.choco-group {
+.whole-sweet-grid {
 	margin-top: 5vh;
 	margin-bottom: 5vh;
 }
@@ -427,6 +506,7 @@ body {
 .about-us-header {
 	position: relative;
 	width: 100%;
+	overflow: hidden;
 }
 
 #about-us-text {
@@ -434,9 +514,15 @@ body {
 	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	max-width: 100%;
-    height: auto;
+	max-width: 70%;
+    max-height: 15vh;
     display: block;
+}
+
+@media (max-width: 884px) {
+	#about-us-text {
+		width: 45%;
+	}
 }
 
 #about-us > p {
@@ -552,20 +638,13 @@ form > button {
 	opacity: .5;
 }
 
-#goToTopBtn {
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	font-size: 18px;
-	background-color: #007BFF;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	padding: 10px;
-	cursor: pointer;
-}
-
-#goToTopBtn:hover {
-	background-color: #0056b3;
+#backToTopBtn {
+	position: absolute;
+	right: 50px;
+	bottom: 150px;
+	color: white;
+	background-color: red;
+	border-radius: 100%;
+	padding: 5px 8px;
+	box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
 }

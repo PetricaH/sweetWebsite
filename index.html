@@ -29,18 +29,22 @@
                         indeterminate_question_box
                         </span> </button></a>
                 </div>
-                <div class="part-two-hero">
+
+                <div class="daily-product-hero-card">
                     <h1>People Adore</h1>
                     <img src="images/sweetofday.png">   
-                    <div class="part-two-hero-btns">
-                        <div class="quantity">
+                    <div class="daily-product-hero-btns">
+                        <div class="quantity-selector">
                             <div class="btn" onclick="decreaseQuantity()">-</div>
-                            <input type="text" id="quantity" value="1">
+                            <input type="text" class="quantity-container" id="quantity" value="1">
                             <div class="btn" onclick="increaseQuantity()">+</div>
                         </div>
-                        <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                        <span class="material-symbols-outlined quant-cart">
+                            shopping_cart
+                            </span>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -57,7 +61,7 @@
                             <h2 style="background-color: #FF0000;">Chocolate Confections</h2>
                         </div>
 
-                        <div class="choco-group">
+                        <div class="whole-sweet-grid">
 
                             <div class="sortiment-buttons">
                                 <button type="button"  onclick="filterSweets('all')">All</button>
@@ -71,72 +75,84 @@
                                     <p>Truffles</p>
                                     <div class="truffles"><img src="https://fakeimg.pl/200x200/"></div>
                                     <div class="part-two-hero-btns">
-                                        <div class="quantity">
+                                        <div class="quantity-selector-card">
                                             <div class="btn" onclick="decreaseQuantity()">-</div>
-                                            <input type="text" id="quantity" value="1">
+                                            <input type="text" class="quantity-container" id="quantity" value="1">
                                             <div class="btn" onclick="increaseQuantity()">+</div>
                                         </div>
-                                        <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                        <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                     </div>
                                 </div>
                                 <div class="sweet-card chocoBar" data-category="XX">
                                     <p>Chocolate Bars</p>
                                     <div class="chocoBar"><img src="https://fakeimg.pl/200x200/"></div>
                                     <div class="part-two-hero-btns">
-                                        <div class="quantity">
+                                        <div class="quantity-selector-card">
                                             <div class="btn" onclick="decreaseQuantity()">-</div>
-                                            <input type="text" id="quantity" value="1">
+                                            <input type="text" class="quantity-container" id="quantity" value="1">
                                             <div class="btn" onclick="increaseQuantity()">+</div>
                                         </div>
-                                        <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                        <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                     </div>
                                 </div>
                                 <div class="sweet-card chocoAlmonds" data-category="XXX">
                                     <p>Chocolate Almonds</p>
                                     <div class="chocoAlmonds"><img src="https://fakeimg.pl/200x200/"></div>
                                     <div class="part-two-hero-btns">
-                                        <div class="quantity">
+                                        <div class="quantity-selector-card">
                                             <div class="btn" onclick="decreaseQuantity()">-</div>
-                                            <input type="text" id="quantity" value="1">
+                                            <input type="text" class="quantity-container" id="quantity" value="1">
                                             <div class="btn" onclick="increaseQuantity()">+</div>
                                         </div>
-                                        <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                        <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                     </div>
                                 </div>
                                 <div class="sweet-card pralines" data-category="XXX">
                                     <p>Pecan Pralines</p>
                                     <div class="pralines"><img src="https://fakeimg.pl/200x200/"></div>
                                     <div class="part-two-hero-btns">
-                                        <div class="quantity">
+                                        <div class="quantity-selector-card">
                                             <div class="btn" onclick="decreaseQuantity()">-</div>
-                                            <input type="text" id="quantity" value="1">
+                                            <input type="text" class="quantity-container" id="quantity" value="1">
                                             <div class="btn" onclick="increaseQuantity()">+</div>
                                         </div>
-                                        <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                        <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                     </div>
                                 </div>
                                 <div class="sweet-card whiteChoco" data-category="XXXX">
                                     <p>Whie Chocolate</p>
                                     <div class="whiteChoco"><img src="https://fakeimg.pl/200x200/"></div>
                                     <div class="part-two-hero-btns">
-                                        <div class="quantity">
+                                        <div class="quantity-selector-card">
                                             <div class="btn" onclick="decreaseQuantity()">-</div>
-                                            <input type="text" id="quantity" value="1">
+                                            <input type="text" class="quantity-container" id="quantity" value="1">
                                             <div class="btn" onclick="increaseQuantity()">+</div>
                                         </div>
-                                        <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                        <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                     </div>
                                 </div>
                                 <div class="sweet-card premiumChoco" data-category="XXXX">
                                     <p>Premium Chocolate</p>
                                     <div class="premiumChoco"><img src="https://fakeimg.pl/200x200/"></div>
                                     <div class="part-two-hero-btns">
-                                        <div class="quantity">
+                                        <div class="quantity-selector-card">
                                             <div class="btn" onclick="decreaseQuantity()">-</div>
-                                            <input type="text" id="quantity" value="1">
+                                            <input type="text" class="quantity-container" id="quantity" value="1">
                                             <div class="btn" onclick="increaseQuantity()">+</div>
                                         </div>
-                                        <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                        <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                     </div>
                                 </div>
                             </div>
@@ -148,7 +164,7 @@
                         <h2 style="background-color: #FF0000;">Gummy Candies</h2>
                     </div>
 
-                    <div class="choco-group">
+                    <div class="whole-sweet-grid">
 
                         <div class="sortiment-buttons">
                             <button>All</button>
@@ -162,72 +178,84 @@
                                 <p>Truffles</p>
                                 <div class="truffles"><img src="https://fakeimg.pl/200x200/"></div>
                                 <div class="part-two-hero-btns">
-                                    <div class="quantity">
+                                    <div class="quantity-selector-card">
                                         <div class="btn" onclick="decreaseQuantity()">-</div>
-                                        <input type="text" id="quantity" value="1">
+                                        <input type="text" class="quantity-container" id="quantity" value="1">
                                         <div class="btn" onclick="increaseQuantity()">+</div>
                                     </div>
-                                    <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                    <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                 </div>
                             </div>
                             <div class="sweet-card chocoBar">
                                 <p>Chocolate Bars</p>
                                 <div class="chocoBar"><img src="https://fakeimg.pl/200x200/"></div>
                                 <div class="part-two-hero-btns">
-                                    <div class="quantity">
+                                    <div class="quantity-selector-card">
                                         <div class="btn" onclick="decreaseQuantity()">-</div>
-                                        <input type="text" id="quantity" value="1">
+                                        <input type="text" class="quantity-container" id="quantity" value="1">
                                         <div class="btn" onclick="increaseQuantity()">+</div>
                                     </div>
-                                    <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                    <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                 </div>
                             </div>
                             <div class="sweet-card chocoAlmonds">
                                 <p>Chocolate Almonds</p>
                                 <div class="chocoAlmonds"><img src="https://fakeimg.pl/200x200/"></div>
                                 <div class="part-two-hero-btns">
-                                    <div class="quantity">
+                                    <div class="quantity-selector-card">
                                         <div class="btn" onclick="decreaseQuantity()">-</div>
-                                        <input type="text" id="quantity" value="1">
+                                        <input type="text" class="quantity-container" id="quantity" value="1">
                                         <div class="btn" onclick="increaseQuantity()">+</div>
                                     </div>
-                                    <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                    <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                 </div>
                             </div>
                             <div class="sweet-card pralines">
                                 <p>Pecan Pralines</p>
                                 <div class="pralines"><img src="https://fakeimg.pl/200x200/"></div>
                                 <div class="part-two-hero-btns">
-                                    <div class="quantity">
+                                    <div class="quantity-selector-card">
                                         <div class="btn" onclick="decreaseQuantity()">-</div>
-                                        <input type="text" id="quantity" value="1">
+                                        <input type="text" class="quantity-container" id="quantity" value="1">
                                         <div class="btn" onclick="increaseQuantity()">+</div>
                                     </div>
-                                    <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                    <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                 </div>
                             </div>
                             <div class="sweet-card whiteChoco">
                                 <p>Whie Chocolate</p>
                                 <div class="whiteChoco"><img src="https://fakeimg.pl/200x200/"></div>
                                 <div class="part-two-hero-btns">
-                                    <div class="quantity">
+                                    <div class="quantity-selector-card">
                                         <div class="btn" onclick="decreaseQuantity()">-</div>
-                                        <input type="text" id="quantity" value="1">
+                                        <input type="text" class="quantity-container" id="quantity" value="1">
                                         <div class="btn" onclick="increaseQuantity()">+</div>
                                     </div>
-                                    <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                    <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                 </div>
                             </div>
                             <div class="sweet-card premiumChoco">
                                 <p>Premium Chocolate</p>
                                 <div class="premiumChoco"><img src="https://fakeimg.pl/200x200/"></div>
                                 <div class="part-two-hero-btns">
-                                    <div class="quantity">
+                                    <div class="quantity-selector-card">
                                         <div class="btn" onclick="decreaseQuantity()">-</div>
-                                        <input type="text" id="quantity" value="1">
+                                        <input type="text" class="quantity-container" id="quantity" value="1">
                                         <div class="btn" onclick="increaseQuantity()">+</div>
                                     </div>
-                                    <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                    <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                 </div>
                             </div>
                         </div>
@@ -241,7 +269,7 @@
                         <h2 style="background-color: #FF0000;">Traditional Sweets</h2>
                     </div>
 
-                    <div class="choco-group">
+                    <div class="whole-sweet-grid">
 
                         <div class="sortiment-buttons">
                             <button>All</button>
@@ -255,72 +283,84 @@
                                 <p>Truffles</p>
                                 <div class="truffles"><img src="https://fakeimg.pl/200x200/"></div>
                                 <div class="part-two-hero-btns">
-                                    <div class="quantity">
+                                    <div class="quantity-selector-card">
                                         <div class="btn" onclick="decreaseQuantity()">-</div>
-                                        <input type="text" id="quantity" value="1">
+                                        <input type="text" class="quantity-container" id="quantity" value="1">
                                         <div class="btn" onclick="increaseQuantity()">+</div>
                                     </div>
-                                    <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                    <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                 </div>
                             </div>
                             <div class="sweet-card chocoBar">
                                 <p>Chocolate Bars</p>
                                 <div class="chocoBar"><img src="https://fakeimg.pl/200x200/"></div>
                                 <div class="part-two-hero-btns">
-                                    <div class="quantity">
+                                    <div class="quantity-selector-card">
                                         <div class="btn" onclick="decreaseQuantity()">-</div>
-                                        <input type="text" id="quantity" value="1">
+                                        <input type="text" class="quantity-container" id="quantity" value="1">
                                         <div class="btn" onclick="increaseQuantity()">+</div>
                                     </div>
-                                    <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                    <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                 </div>
                             </div>
                             <div class="sweet-card chocoAlmonds">
                                 <p>Chocolate Almonds</p>
                                 <div class="chocoAlmonds"><img src="https://fakeimg.pl/200x200/"></div>
                                 <div class="part-two-hero-btns">
-                                    <div class="quantity">
+                                    <div class="quantity-selector-card">
                                         <div class="btn" onclick="decreaseQuantity()">-</div>
-                                        <input type="text" id="quantity" value="1">
+                                        <input type="text" class="quantity-container" id="quantity" value="1">
                                         <div class="btn" onclick="increaseQuantity()">+</div>
                                     </div>
-                                    <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                    <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                 </div>
                             </div>
                             <div class="sweet-card pralines">
                                 <p>Pecan Pralines</p>
                                 <div class="pralines"><img src="https://fakeimg.pl/200x200/"></div>
                                 <div class="part-two-hero-btns">
-                                    <div class="quantity">
+                                    <div class="quantity-selector-card">
                                         <div class="btn" onclick="decreaseQuantity()">-</div>
-                                        <input type="text" id="quantity" value="1">
+                                        <input type="text" class="quantity-container" id="quantity" value="1">
                                         <div class="btn" onclick="increaseQuantity()">+</div>
                                     </div>
-                                    <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                    <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                 </div>
                             </div>
                             <div class="sweet-card whiteChoco">
                                 <p>Whie Chocolate</p>
                                 <div class="whiteChoco"><img src="https://fakeimg.pl/200x200/"></div>
                                 <div class="part-two-hero-btns">
-                                    <div class="quantity">
+                                    <div class="quantity-selector-card">
                                         <div class="btn" onclick="decreaseQuantity()">-</div>
-                                        <input type="text" id="quantity" value="1">
+                                        <input type="text" class="quantity-container" id="quantity" value="1">
                                         <div class="btn" onclick="increaseQuantity()">+</div>
                                     </div>
-                                    <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                    <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                 </div>
                             </div>
                             <div class="sweet-card premiumChoco">
                                 <p>Premium Chocolate</p>
                                 <div class="premiumChoco"><img src="https://fakeimg.pl/200x200/"></div>
                                 <div class="part-two-hero-btns">
-                                    <div class="quantity">
+                                    <div class="quantity-selector-card">
                                         <div class="btn" onclick="decreaseQuantity()">-</div>
-                                        <input type="text" id="quantity" value="1">
+                                        <input type="text" class="quantity-container" id="quantity" value="1">
                                         <div class="btn" onclick="increaseQuantity()">+</div>
                                     </div>
-                                    <i class="fa-solid fa-cart-shopping quant-cart"></i>
+                                    <span class="material-symbols-outlined quant-cart">
+                                            shopping_cart
+                                            </span>
                                 </div>
                             </div>
                         </div>
@@ -416,10 +456,10 @@
 
     </footer>
 
-	<button onclick="goToTop()" id="goToTopBtn" title="Go to Top">&#8679; Top</button>
-	
-	
-    
+    <a href="#logo-dolce" id="backToTopBtn"><span class="material-symbols-outlined">
+        arrow_upward
+        </span></a>
+
 <script src="https://kit.fontawesome.com/1efbe1aa2f.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
